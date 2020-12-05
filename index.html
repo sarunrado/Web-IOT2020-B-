@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+  </head>
+
+  <script src="https://cdn.jsdelivr.net/npm/@chirimen/microbit"></script>
+
+  <body>
+    <form name="js">
+      <input type="button" value="Connect" onclick="connect();" />
+      <input type="button" value="Disconnect" onclick="disconnect();" />
+    </form>
+    <hr />
+    <table>
+      <tr>
+        <td>msg1:</td>
+        <td id="msg">-</td>
+      </tr>
+      <tr>
+        <td id="gdata0">NULL</td>
+        <td id="gdata2">NULL</td>
+      </tr>
+    </table>
+    <hr />
+    <!-- <input type="button" value="上1" onclick="motorControl(1);" /> -->
+    <!-- <input type="button" value="下1" onclick="motorControl(2);" /> -->
+    <!-- <input type="button" value="stop" onclick="motorControl(3);" /> -->
+    <!-- <input type="button" value="上2" onclick="motorControl(4);" /> -->
+    <!-- <input type="button" value="下2" onclick="motorControl(5);" /> -->
+    <input type="button" value="1p右" onclick="condition1p(10);" />
+    <input type="button" value="1p左" onclick="condition1p(0);" />
+    <input type="button" value="2p右" onclick="condition2p(10);" />
+    <input type="button" value="2p左" onclick="condition2p(0);" />
+    <div id="msg">---</div>
+    <script src="main.js"></script>
+  </body>
+</html>
